@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#lado1{
+    position: relative;
+    min-height: 100vh;
+    width: 30%;
+    margin-left: 2.5%;
+    background-color: aquamarine;
+    color: #000;
+    float: left;
+}
+#lado2{
+    position: relative;
+    min-height: 100vh;
+    width: 65%;
+    margin-left: 32.5%;
+    background-color: #3604e9;
+    color: #000;
+}
+#article1{
+    position: relative;
+    width: 98%;
+    min-height: 95vh;
+    top: 4vh;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+#article1 h1{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 1vh;
+    background-color: #58c5f8;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+#text1{
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    margin-top: 2vh;
+    background-color: #dd295f;
+    color: white;
+}
+#img1{
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    margin-top: 2vh;
+    background-color: #4d1c2b;
+    color: white;
+}
+#nav1{
+    position: relative;
+    width: 90%;
+    min-height: 40%;
+    background-color: #FFF;
+    margin: auto;
+}
+#nav2{
+    position: absolute;
+    width: 95%;
+    min-height: 10vh;
+    visibility: hidden;
+    margin-left: 2.5%;
+    z-index: 2;
+    top: 10%;
+}
+#nav3{
+    position: absolute;
+    width: 95%;
+    min-height: 10vh;
+    visibility: hidden;
+    margin-left: 2.5%;
+    z-index: 2;
+}
+#nav1 a{
+    position: relative;
+    display: block;
+    width: 96%;
+    height: 24%;
+    background-color: rgb(44, 44, 44);
+    color: #FFF;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 20px;
+}
+#nav2 a{
+    position: relative;
+    width: 20%;
+    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    background-color: rgb(28, 100, 21);
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    z-index: 2;
+    text-align: center;
+}
+#nav3 a{
+    display: block;
+    width: 96%;
+    height: auto;
+    background-color: rgb(21, 22, 100);
+    color: #FFF;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 20px;
+}
+#menu1{
+    position: absolute;
+    background-color: rgb(9, 10, 10);
+    width: 99.9%;
+    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: #06e073;
+    text-align: center;
+    border: 1px solid #06e073;
+    top: -28%;
+}
+#menu2{
+    position: absolute;
+    background-color: rgb(9, 10, 10);
+    width: 99.9%;
+    height: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: #06e073;
+    text-align: center;
+    border: 1px solid #06e073;
+    top: -27.5%;
+    visibility: hidden;
+}
+#nav1 a:hover{
+    background-color: aqua;
+    color: #F00;
+}
+#nav2 a:hover{
+    background-color: aqua;
+    color: #F00;
+}
+#nav3 a:hover{
+    background-color: aqua;
+    color: #F00;
+}
+#aside1{
+    position: relative;
+    width: 90%;
+    min-height: 40vh;
+    background-color: #FFF;
+    margin-top: 4vh;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width:480px){
+    #lado1{
+        display: none;
+    }
+    #lado2{
+        width: 95%;
+        margin-left: 2.5%;  
+    }
+    #nav2{
+        visibility: hidden;
+    }
+    #menu1{
+        visibility: hidden;
+        cursor: pointer;  
+    }
+    #menu2{
+        visibility: visible;
+        cursor: pointer;    
+    }
+    header{
+        margin-bottom: 5.2vh;
+    }
+}
+
+@media only screen and (min-width:481px){
+    @media only screen and (max-width:720px)
+    {
+        #lado1{
+            display: none;
+        }
+        #lado2{
+            width: 95%;
+            margin-left: 2.5%;  
+        }
+        #nav2{
+            visibility: visible;
+
+        }
+        #nav3{
+            visibility: hidden;
+        }
+        header{
+            margin-bottom: 5vh;
+        }
+
+    }
+}
